@@ -7,8 +7,203 @@
   background-position: center;
   background-attachment: fixed;
   background-color: var(--bgColor);
+  
 }
+
 .header {
+  position: relative;
   block-size: 100%;
   min-block-size: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  margin-block-start: 75px;
+  margin-inline-end: var(--sectionMarginInline,10px);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  list-style: none;
+}
+
+.header__theme-menu-button {
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--menuColor, #FF0070);
+  background-color: var(--buttonBackgroundColor, inherit);
+  border: 0;
+  padding-inline: 25px;
+  padding-block: 0;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--buttonBorderBackgroundColor, #FF0070);
+}
+
+.header__theme-menu-button:hover {
+  --buttonBorderBackgroundColor: #FF007066;
+  border: 1px solid var(--buttonBorderBackgroundColor, #FF007066);
+}
+
+.header__theme-menu-button_active {
+  --buttonBorderBackgroundColor: #FF0070;
+  border: 1px solid var(--buttonBorderBackgroundColor, #FF0070);
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 83%;
+  color: var(--headerTitleColor, #DB00FF);
+  text-shadow: 4px 4px var(--headerAccentTitleColor, #FF0070);
+  margin-inline: var(--sectionMarginInline, 10px);
+}
+
+.section__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.4px;
+  margin-inline: var(--sectionMarginInline, 10px);
+
+}
+
+.header .section__title {
+  margin-block: var(--sectionmarginBlock, 55px 66px);
+}
+/*переписать на класс title-decor*/
+.title-decor {
+  background-color: var(--textBackground, #FF0070);
+  color: var(--textColor, #000028);
+}
+
+.section__focus {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-block-start: var(--sectionPaddingBlockStart, 40px);
+  gap: 20px 0;
+  background-color: var(--bgColor);
+}
+
+.section__focus .title-decor{
+  --textBackground: #000028;
+  --textColor:#FF0070;
+  background-color: var(--textBackground);
+  color: var(--textColor);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  margin-inline: var(--sectionMarginInline);
+}
+
+section .content .title-decor {
+  --textBackground: #FF0070;
+  --textColor: #000028;
+  background-color: var(--textBackground, #FF0070);
+  color: var(--textColor, #000028);
+}
+
+.content__text {
+  --textColor: #F1B2CE;
+  color: var(--textColor);
+}
+
+.text__link {
+  text-shadow: 1px 1px var(--headerAccentTitleColor);
+  text-decoration: none;
+}
+
+.text__link:focus {
+  outline: none;
+}
+
+.text__link:focus-visible {
+  --textColor: #F1B2CE;
+  outline: 1px solid var(--textColor);
+}
+
+.text__link:hover {
+  text-decoration: underline;
+}
+
+.section__concentraition {
+  --sectionPaddingBlockStart: 50px;
+  display: grid;
+  gap: 20px 0;
+  background-color: var(--bgColor);
+  padding-block-start: var(--sectionPaddingBlockStart);
+}
+
+.section__concentraition .title-decor {
+  --textBackground: #000028;
+  --textColor:#FF0070;
+  background-color: var(--textBackground);
+  color: var(--textColor);
+}
+
+.section__beterConcentraiton {
+  --sectionPaddingBlockStart: 50px;
+  display: grid;
+  gap: 20px 0;
+  background-color: var(--bgColor);
+  padding-block-start: var(--sectionPaddingBlockStart);
+}
+
+.section__beterConcentraiton .title-decor {
+  --textBackground: #000028;
+  --textColor:#FF0070;
+  background-color: var(--textBackground);
+  color: var(--textColor);
+}
+
+.unbold {
+  font-weight: normal;
+}
+
+.section__pictures {
+  display: grid;
+  gap: 10px;
+  --sectionPaddingBlockStart: 50px;
+  padding-block-start: var(--sectionPaddingBlockStart);
+  background-color: var(--bgColor);
+  padding-block-end: var(--sectionPaddingBlockEnd, 40px);
+  
+}
+
+.pictures__image {
+  display: block;
+  margin-inline: var(--sectionMarginInline);
+  inline-size: calc(100% - 20px);
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  grid-template-columns: 1fr min-content 1fr;
+  block-size: 100%;
+  min-block-size: 668px;
+  background-color: var(--bgColor);
+}
+
+.footer__title {
+  grid-row: 2;
+  grid-column: 2;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 83%;
+  color: var(--headerTitleColor, #DB00FF);
+  text-shadow: 4px 4px var(--headerAccentTitleColor, #FF0070);
 }

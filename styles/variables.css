@@ -3,7 +3,8 @@
   и их переопределение под различные устройства
 */
 :root {
-    --bgImage: url(../images/cover-image.png);
-    --bgColor: #000028;
-    
+    --sectionmarginBlock: 55px 66px;
+    --sectionMarginInline: 10px;
+    --sectionPaddingBlockStart: 40px;
+    --sectionPaddingBlockEnd:40px
 }
