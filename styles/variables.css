@@ -3,8 +3,47 @@
   и их переопределение под различные устройства
 */
 :root {
+    --bgImage: url(../images/cover-image.png);
+    --bgColor: #000028;
+    --menuColor: #FF0070;
+    --buttonBackgroundColor: inherit;
+    --buttonBorderBackgroundColor: #FF0070;
+    --headerTitleColor: #DB00FF;
+    --headerAccentTitleColor: #FF0070;
+    --textBackground: #FF0070;
+    --textColor: #000028;
+    --linkColor: #F1B2CE;
     --sectionmarginBlock: 55px 66px;
     --sectionMarginInline: 10px;
-    --sectionPaddingBlockStart: 40px;
-    --sectionPaddingBlockEnd:40px
+    --sectionPaddingBlockStart: 50px;
+    --sectionPaddingBlockEnd:40px;
+    --insetDecorationZone: 10px;
+    --insetDecorBlockStart: 10px ;
+    --insetDecorInlineEnd: 38px;
+    
+}
+
+@media (603px <= width <=768px) {
+  :root {
+    --sectionmarginBlock: 104px 66px;
+  }
+}
+
+@media (width > 768px) {
+  :root {
+    --sectionMarginInline: 20px;
+    --insetDecorationZone: 20px;
+    --insetDecorBlockStart: 20px;
+    --insetDecorInlineEnd: 48px;
+    --sectionPaddingBlockStart: 80px;
+    --sectionPaddingBlockEnd:60px;
+    --sectionmarginBlock: 162px 183px;
+  }
+}
+
+@media (width > 1024px) {
+  :root {
+    --sectionmarginBlock: 114px 134px;
+  }
+  
 }

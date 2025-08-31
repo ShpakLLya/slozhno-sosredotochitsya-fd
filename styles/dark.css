@@ -3,7 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -12,7 +11,6 @@
     --bgImage: url(../images/cover-image.png);
     --bgColor: #000028;
     --menuColor: #FF0070;
-    --buttonBackgroundColor: inherit;
     --buttonBorderBackgroundColor: #FF0070;
     --headerTitleColor: #DB00FF;
     --headerAccentTitleColor: #FF0070;
@@ -22,48 +20,19 @@
 }
 
 .theme-dark .decorate__element {
-  position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 38px;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: uppercase;
-  color: var(--menuColor);
-  margin: 0;
+  display: block;
 }
 
 .theme-dark .decorate__element::after {
   display: inline-block;
-  position: relative;
-  inset-inline-end: -20px;
-  content: '';
-  inline-size: 9px;
-  block-size: 9px;
-  border-radius: 50%;
-  background-color: var(--menuColor);
-  box-shadow: 0 0 4px 2px var(--menuColor); 
 }
 
 .theme-dark .decorated-zone::before {
-  position: absolute;
-  inset-inline-start: 10px;
-  inset-block-end: 10px;
-  content: '';
-  block-size: 25px;
-  inline-size: 25px;
-  border-inline-start: 1px solid var(--menuColor);
-  border-block-end: 1px solid var(--menuColor);
+display: block;
 }
 
 .theme-dark .decorated-zone::after {
-  position: absolute;
-  inset-inline-end: 10px;
-  inset-block-start: 10px;
-  content: '';
-  block-size: 25px;
-  inline-size: 25px;  
-  border-inline-end: 1px solid var(--menuColor);
-  border-block-start: 1px solid var(--menuColor);
+display: block;
 }
 
 .theme-dark .header__theme-menu-button {
@@ -77,38 +46,37 @@
 }
 
 .theme-dark  .header__theme-menu-button:hover {
-  --buttonBorderBackgroundColor: #32312D66;
-  border: 1px solid var(--buttonBorderBackgroundColor, #32312D66);
+  --buttonBorderBackgroundColor: #FF007066;
+  border: 1px solid var(--buttonBorderBackgroundColor, #FF007066);
 }
 
 .theme-dark  .header__theme-menu-button_active {
-  --buttonBorderBackgroundColor: #353430;
-  border: 1px solid var(--buttonBorderBackgroundColor, #353430);
+  --buttonBorderBackgroundColor: #FF0070;
+  border: 1px solid var(--buttonBorderBackgroundColor, #FF0070);
 }
 
 .theme-dark section .title-decor {
-  --textBackground: #FFF1F7;
-  --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
+  --textBackground: #000028;
+  --textColor: #FF0070;
+  background-color: var(--textBackground, #FF0070);
+  color: var(--textColor, #000028);
 }
 
 .theme-dark .content .title-decor {
-  --textBackground: #FF8DCB;
-  --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
+  --textBackground: #FF0070;
+  --textColor: #000028;
+  background-color: var(--textBackground, #FF0070);
+  color: var(--textColor, #000028);
 }
 
 .theme-dark .section__pictures .title-decor {
-  --textBackground: #FF8DCB;
-  --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
+  --textBackground: #FF0070;
+  --textColor: #000028;
+  background-color: var(--textBackground, #FF0070);
+  color: var(--textColor, #000028);
 }
 
 .theme-dark  .text__link {
-  --headerAccentTitleColor: #353430;
   text-shadow: 1px 1px var(--headerAccentTitleColor);
   text-decoration: none;
 }
