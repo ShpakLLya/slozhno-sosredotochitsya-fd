@@ -74,12 +74,12 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 23.4px;
-  margin-inline: var(--sectionMarginInline, 10px);
 
 }
 
 .header__text {
   margin-block: var(--sectionmarginBlock, 55px 66px);
+  margin-inline: var(--sectionMarginInline, 10px);
 }
 
 .title-decor {
@@ -108,7 +108,7 @@
   block-size: 9px;
   border-radius: 50%;
   background-color: var(--menuColor);
-  box-shadow: 0 0 4px 2px var(--menuColor); 
+  box-shadow: 0 0 4px 2px var(--menuColor);
 }
 
 .decorated-zone::before {
@@ -128,7 +128,7 @@
   inset-block-start: var(--insetDecorationZone);
   content: '';
   block-size: 25px;
-  inline-size: 25px;  
+  inline-size: 25px;
   border-inline-end: 1px solid var(--menuColor);
   border-block-start: 1px solid var(--menuColor);
 }
@@ -138,11 +138,12 @@
   display: grid;
   grid-template-columns: 1fr;
   padding-block-start: var(--sectionPaddingBlockStart, 40px);
+  padding-inline: var(--sectionPaddingInline, 10px);
   gap: 20px;
   background-color: var(--bgColor);
 }
 
-section .title-decor{
+section .title-decor {
   --textBackground: #000028;
   --textColor:#FF0070;
   background-color: var(--textBackground);
@@ -153,7 +154,6 @@ section .title-decor{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-inline: var(--sectionMarginInline);
 }
 
 .content .title-decor {
@@ -166,6 +166,8 @@ section .title-decor{
 .content__text {
   --textColor: #F1B2CE;
   color: var(--textColor);
+  font-size: 18px;
+  line-height: 23.4px;
 }
 
 .text__link {
@@ -191,6 +193,7 @@ section .title-decor{
   gap: 20px;
   background-color: var(--bgColor);
   padding-block-start: var(--sectionPaddingBlockStart);
+  padding-inline: var(--sectionPaddingInline, 10px);
 }
 
 .section__beterConcentraiton {
@@ -198,6 +201,7 @@ section .title-decor{
   gap: 20px;
   background-color: var(--bgColor);
   padding-block-start: var(--sectionPaddingBlockStart);
+  padding-inline: var(--sectionPaddingInline, 10px);
 }
 
 .unbold {
@@ -211,6 +215,7 @@ section .title-decor{
   padding-block-start: var(--sectionPaddingBlockStart);
   background-color: var(--bgColor);
   padding-block-end: var(--sectionPaddingBlockEnd, 40px);
+  padding-inline: var(--sectionPaddingInline, 10px);
   
 }
 
@@ -218,13 +223,12 @@ section .title-decor{
   --textBackground: #FF0070;
   --textColor: #000028;
   background-color: var(--textBackground, #FF0070);
-  color: var(--textColor, #000028);  
+  color: var(--textColor, #000028);
 }
 
 .picture__container {
   display: grid;
   gap: 10px;
-  margin-inline: var(--sectionMarginInline);
 }
 
 .pictures__image {
@@ -254,7 +258,7 @@ section .title-decor{
   text-shadow: 4px 4px var(--headerAccentTitleColor, #FF0070);
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
 
   .header {
     grid-template-columns: repeat(4, 1fr);
@@ -349,7 +353,7 @@ section .title-decor{
   }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
 
   .header {
     grid-template-rows: 1fr min-content 1fr;

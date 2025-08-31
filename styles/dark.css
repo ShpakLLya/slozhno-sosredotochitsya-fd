@@ -37,51 +37,49 @@ display: block;
 
 .theme-dark .header__theme-menu-button {
   color: var(--menuColor, #FF0070);
-  background-color: var(--buttonBackgroundColor, inherit);
 }
 
-.theme-dark .header__theme-menu-button:focus-visible{
+.theme-dark .header__theme-menu-button:focus-visible {
   --buttonBorderBackgroundColor: #FF0070;
-    border-block-end: 1px solid var(--buttonBorderBackgroundColor, #FF0070);
 }
 
 .theme-dark  .header__theme-menu-button:hover {
   --buttonBorderBackgroundColor: #FF007066;
-  border: 1px solid var(--buttonBorderBackgroundColor, #FF007066);
 }
 
 .theme-dark  .header__theme-menu-button_active {
   --buttonBorderBackgroundColor: #FF0070;
-  border: 1px solid var(--buttonBorderBackgroundColor, #FF0070);
+
 }
 
 .theme-dark section .title-decor {
   --textBackground: #000028;
   --textColor: #FF0070;
-  background-color: var(--textBackground, #FF0070);
-  color: var(--textColor, #000028);
 }
 
 .theme-dark .content .title-decor {
   --textBackground: #FF0070;
   --textColor: #000028;
-  background-color: var(--textBackground, #FF0070);
-  color: var(--textColor, #000028);
 }
+
+.theme-dark .content__text {
+  --textColor: #F1B2CE;
+  }
 
 .theme-dark .section__pictures .title-decor {
   --textBackground: #FF0070;
   --textColor: #000028;
-  background-color: var(--textBackground, #FF0070);
-  color: var(--textColor, #000028);
 }
 
 .theme-dark  .text__link {
-  text-shadow: 1px 1px var(--headerAccentTitleColor);
+  --headerAccentTitleColor:#FF0070;
   text-decoration: none;
 }
 
 .theme-dark  .text__link:focus-visible {
   --textColor: #F1B2CE;
-  outline: 1px solid var(--textColor);
 } 
+
+.theme-dark .text__link:hover {
+  text-decoration: underline;
+}

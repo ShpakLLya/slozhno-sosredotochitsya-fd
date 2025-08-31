@@ -15,6 +15,7 @@
     --linkColor: #F1B2CE;
     --sectionmarginBlock: 55px 66px;
     --sectionMarginInline: 10px;
+    --sectionPaddingInline: 10px;
     --sectionPaddingBlockStart: 50px;
     --sectionPaddingBlockEnd:40px;
     --insetDecorationZone: 10px;
@@ -23,15 +24,16 @@
     
 }
 
-@media (603px <= width <=768px) {
+@media (588px <= width < 767px) {
   :root {
     --sectionmarginBlock: 104px 66px;
   }
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   :root {
     --sectionMarginInline: 20px;
+    --sectionPaddingInline: 20px;
     --insetDecorationZone: 20px;
     --insetDecorBlockStart: 20px;
     --insetDecorInlineEnd: 48px;
@@ -41,7 +43,7 @@
   }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   :root {
     --sectionmarginBlock: 114px 134px;
   }

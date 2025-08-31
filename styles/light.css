@@ -36,52 +36,50 @@
   display: none;
 }
 
-.theme-light .header__theme-menu-button:focus-visible{
+.theme-light .header__theme-menu-button:focus-visible {
   --buttonBorderBackgroundColor: #353430;
-  border-block-end: 1px solid var(--buttonBorderBackgroundColor, #353430);
 }
 
 .theme-light  .header__theme-menu-button:hover {
   --buttonBorderBackgroundColor: #32312D66;
-  border: 1px solid var(--buttonBorderBackgroundColor, #32312D66);
 }
 
 .theme-light  .header__theme-menu-button_active {
   --buttonBorderBackgroundColor: #353430;
-  border: 1px solid var(--buttonBorderBackgroundColor, #353430);
 }
 
 .theme-light section .title-decor {
   --textBackground: #FFF1F7;
   --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
 }
 
 .theme-light .content .title-decor {
   --textBackground: #FF8DCB;
   --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
+}
+
+.theme-light .content__text {
+  --textColor: #353430;
 }
 
 .theme-light .section__pictures .title-decor {
   --textBackground: #FF8DCB;
   --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
+
 }
 
 .theme-light  .text__link {
-  --headerAccentTitleColor: #353430;
-  text-shadow: 1px 1px var(--headerAccentTitleColor);
+
   text-decoration: none;
 }
 
 .theme-light  .text__link:focus-visible {
-  --textColor: #F1B2CE;
-  outline: 1px solid var(--textColor);
+  --textColor: #353430;
 } 
+
+.theme-light .text__link:hover {
+  text-decoration: underline;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -96,68 +94,60 @@
     --linkColor: #353430;
   }
 
-.page {
-  background-image: var(--bgImage);
-/*  background-color: var(--bgColor);*/
-}
+  .page {
+    background-image: var(--bgImage);
+    background-color: var(--bgColor);
+  }
 
-.decorated-zone::before {
-  display: none;
-}
+  .decorated-zone::before {
+    display: none;
+  }
 
-.decorated-zone::after {
-  display: none;
-}
+  .decorated-zone::after {
+    display: none;
+  }
 
-.decorate__element {
-  display: none;
-}
+  .decorate__element {
+    display: none;
+  }
 
-.header__theme-menu-button:focus-visible{
-  --buttonBorderBackgroundColor: #353430;
-  border-block-end: 1px solid var(--buttonBorderBackgroundColor, #353430);
-}
+  .header__theme-menu-button:focus-visible {
+    --buttonBorderBackgroundColor: #353430;
+  }
 
-.header__theme-menu-button:hover {
-  --buttonBorderBackgroundColor: #32312D66;
-  border: 1px solid var(--buttonBorderBackgroundColor, #32312D66);
-}
+  .header__theme-menu-button:hover {
+    --buttonBorderBackgroundColor: #32312D66;
+  }
 
- .header__theme-menu-button_active {
-  --buttonBorderBackgroundColor: #353430;
-  border: 1px solid var(--buttonBorderBackgroundColor, #353430);
-}
+  .header__theme-menu-button_active {
+    --buttonBorderBackgroundColor: #353430;
+  }
 
-section .title-decor {
-  --textBackground: #FFF1F7;
+  section .title-decor {
+    --textBackground: #FFF1F7;
+    --textColor: #353430;
+  }
+
+  .content .title-decor {
+    --textBackground: #FF8DCB;
+    --textColor: #353430;
+  }
+
+  .content__text {
   --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
-}
+  }
 
-.content .title-decor {
-  --textBackground: #FF8DCB;
-  --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
-}
+  .section__pictures .title-decor {
+    --textBackground: #FF8DCB;
+    --textColor: #353430;
+  }
 
-.section__pictures .title-decor {
-  --textBackground: #FF8DCB;
-  --textColor: #353430;
-  background-color: var(--textBackground, #FFF1F7);
-  color: var(--textColor, #353430);
-}
+  .text__link {
+    text-decoration: none;
+  }
 
-.text__link {
-  --headerAccentTitleColor: #353430;
-  text-shadow: 1px 1px var(--headerAccentTitleColor);
-  text-decoration: none;
-}
-
-.text__link:focus-visible {
-  --textColor: #F1B2CE;
-  outline: 1px solid var(--textColor);
-} 
+  .text__link:focus-visible {
+    --textColor: #353430;
+  } 
 
 }
