@@ -19,11 +19,6 @@
     --linkColor: #353430;
 }
 
-.theme-light .page {
-  background-image: var(--bgImage);
-  background-color: var(--bgColor);
-}
-
 .theme-light .decorated-zone::before {
   display: none;
 }
@@ -94,11 +89,6 @@
     --linkColor: #353430;
   }
 
-  .page {
-    background-image: var(--bgImage);
-    background-color: var(--bgColor);
-  }
-
   .decorated-zone::before {
     display: none;
   }
@@ -148,5 +138,5 @@
 
   .text__link:focus-visible {
     --textColor: #353430;
-  } 
+  }
 }

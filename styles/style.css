@@ -172,7 +172,7 @@ section .title-decor {
 }
 
 .text__link {
-  text-shadow: 1px 1px var(--headerAccentTitleColor);
+  text-shadow: 0px 4px 4px var(--headerAccentTitleColor);
   text-decoration: none;
 }
 
@@ -199,6 +199,10 @@ section .title-decor {
 
 .section__beterConcentraiton .content {
   gap: 20px;
+}
+
+.section__beterConcentraiton .card {
+  gap: 10px;
 }
 
 .section__beterConcentraiton {
@@ -283,7 +287,7 @@ section .title-decor {
   .header__title {
     grid-column: 1 / 5;
     grid-row: 3 / 4;
-    margin-inline-end: 0;
+    margin-inline: 0;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
   
