@@ -35,6 +35,7 @@
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   font-weight: normal;
+  text-transform: lowercase;
   color: var(--menuColor, #FF0070);
   background-color: var(--buttonBackgroundColor, inherit);
   border: 0;
@@ -367,6 +368,7 @@ section .title-decor {
 
   .footer {
     min-block-size: 1024px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
 }
 
@@ -419,5 +421,6 @@ section .title-decor {
 
   .footer {
     min-block-size: 768px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
 }
