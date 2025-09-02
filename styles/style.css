@@ -267,7 +267,6 @@ section .title-decor {
 
   .header__theme-menu {
     justify-self: end;
-    align-self: center;
     grid-column: 4 / 5;
     grid-row: 1 / 3;
     margin-inline-end: var(--sectionMarginInline,10px);
@@ -285,7 +284,6 @@ section .title-decor {
     grid-row: 4 / 6;
     margin-inline-start: 0;
     margin-block: 162px 190px;
-    /*align-self: end;*/
   }
 
   .focus {

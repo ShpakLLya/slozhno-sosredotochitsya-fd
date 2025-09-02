@@ -49,10 +49,9 @@
   --textColor: #353430;
 }
 
-.theme-light .section__pictures .title-decor {
+.theme-light .pictures .title-decor {
   --textBackground: #FF8DCB;
   --textColor: #353430;
-
 }
 
 .theme-light  .text__link {
@@ -111,7 +110,7 @@
   --textColor: #353430;
   }
 
-  .section__pictures .title-decor {
+  .pictures .title-decor {
     --textBackground: #FF8DCB;
     --textColor: #353430;
   }
