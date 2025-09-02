@@ -13,23 +13,25 @@
     --textBackground: #FF0070;
     --textColor: #000028;
     --linkColor: #F1B2CE;
+    --menuMarginBlockStart: 75px;
     --sectionMarginInline: 10px;
     --sectionPaddingInline: 10px;
     --sectionPaddingBlockStart: 50px;
     --sectionPaddingBlockEnd:40px;
     --insetDecorationZone: 10px;
     --insetDecorBlockStart: 10px ;
-    --insetDecorInlineEnd: 38px;
+    --insetDecorInlineEnd: 29px;
     
 }
 
 @media (width >= 768px) {
   :root {
+    --menuMarginBlockStart: 192px;
     --sectionMarginInline: 20px;
     --sectionPaddingInline: 20px;
     --insetDecorationZone: 20px;
     --insetDecorBlockStart: 20px;
-    --insetDecorInlineEnd: 48px;
+    --insetDecorInlineEnd: 38px;
     --sectionPaddingBlockStart: 80px;
     --sectionPaddingBlockEnd:60px;
     --sectionmarginBlock: 162px 183px;
@@ -38,6 +40,7 @@
 
 @media (width >= 1024px) {
   :root {
+    --menuMarginBlockStart: 20px;
     --sectionmarginBlock: 114px 134px;
   }
   

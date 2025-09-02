@@ -8,7 +8,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-    --bgImage: url(../images/cover-image.png);
+    --bgImage: url(../images/cover-image-dark.png);
     --bgColor: #000028;
     --menuColor: #FF0070;
     --buttonBorderBackgroundColor: #FF0070;

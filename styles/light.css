@@ -19,14 +19,6 @@
     --linkColor: #353430;
 }
 
-.theme-light .decorated-zone::before {
-  display: none;
-}
-
-.theme-light .decorated-zone::after {
-  display: none;
-}
-
 .theme-light .decorate__element {
   display: none;
 }
@@ -87,14 +79,6 @@
     --textBackground: #FF8DCB;
     --textColor: #353430;
     --linkColor: #353430;
-  }
-
-  .decorated-zone::before {
-    display: none;
-  }
-
-  .decorated-zone::after {
-    display: none;
   }
 
   .decorate__element {
